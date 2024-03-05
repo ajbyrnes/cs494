@@ -1,0 +1,4 @@
+Execution time appears to increase exponentially with problem size, based on the 5 ranges I tested.
+Graphing the points (size of range, execution time) on a log-log plot reveals a nice linear relationship.
+The graph I ended up with suggests that I could run run this algorithm on my machine for an entire day and only
+get through the primes from 1 to 1e10, so I guess it's good I stopped at 1e8. 

@@ -1,0 +1,8 @@
+Time to find primes between 1 and 10 was 0 milliseconds
+Time to find primes between 1 and 100 was 0 milliseconds
+Time to find primes between 1 and 1000 was 0 milliseconds
+Time to find primes between 1 and 10000 was 3 milliseconds
+Time to find primes between 1 and 100000 was 157 milliseconds
+Time to find primes between 1 and 1000000 was 1448 milliseconds
+Time to find primes between 1 and 10000000 was 21857 milliseconds
+Time to find primes between 1 and 100000000 was 411909 milliseconds
