@@ -1,0 +1,17 @@
+My graph shows a slight increase in average execution time going from 1 to 2 threads,
+then a significant decline from 2 to 4 and from 4 to 8 threads. From 8 to 16 threads,
+the average duration slightly increases again. This isn't surprising based on my previous
+experience with threads - naively adding more threads can make a process run much longer
+than if there were fewer threads or even only a single thread. 
+
+There is overhead associated with switching between threads - and the more threads there are, 
+the more time has to be spent switching between them. This would explain the increase in average
+duration from 1 to 2 threads and 8 to 16 threads. The size of the problem is such that whatever
+time is being saved in doing the actual computation (quicksorting the vector) is less than the time
+needed to manage the increased number of threads. 
+
+What this example shows is that scalability is relative. The vector we sorted had 500,000 items. If it
+was significantly larger, then we would probably see the average execution time continue to decrease from
+8 to 16 threads - but then it would start to increase again at some larger number of threads.
+
+
